@@ -2,77 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(55, 55, 59);">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
-        <a class="navbar-brand text-white ms-5" href="#">
-            <img src="codoacodo.png" alt="" width="70" height="50" class="d-inline-block align-text-center">
-            Conf Bs As
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            </ul>
-            <span class="navbar-text mx-1">
-                <a class="nav-link active text-white" href="#">La conferencia</a>
-            </span>
-            <span class="navbar-text mx-1">
-                <a class="nav-link text-secondary" href="#">Los oradores</a>
-            </span>
-            <span class="navbar-text mx-1">
-                <a class="nav-link text-secondary" href="#">El lugar y la fecha</a>
-            </span>
-            <span class="navbar-text mx-1">
-                <a class="nav-link text-secondary" href="#">Convierte en orador</a>
-            </span>
-            <span class="navbar-text me-5">
-                <a class="nav-link text-success" href="#">Comprar tickets</a>
-            </span>
+
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: rgb(55, 55, 59);">
+        <div class="container-fluid mx-4">
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/codoacodo.png" alt="" width="70" height="50"
+                    class="d-inline-block align-content-center">
+                Conf Bs As
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Convierte en orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
     </nav>
-    <div class="w-auto">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="imagenes/hawaii.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col">
-                                </div>
-                                <div class="col">
-                                    <h5>First slide label</h5>
-                                    <p class="text-end">Some representative placeholder content for the first slide.</p>
-                                </div>
-                            </div>
-                        </div>
+
+    <div class="card">
+        <img class="card-img-top" src="imagenes/ba1.jpg" alt="Card image">
+        <div class="card-img-overlay d-flex justify-content-end" style="background-color: rgba(0, 0, 0, 0.5);">
+            <div class="d-flex align-items-center">
+                <div class="row mx-4">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col text-end text-white">
+                        <h4>Conf Bs As</h5>
+                            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra
+                                comunidad el
+                                conocimiento y experiencia de los expertos que están creando el futuro de internet.
+                                Ven a
+                                conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de
+                                primer
+                                nivel
+                                que tenemos para ti. Te esperamos!</p>
+                            <button type="button" class="btn border text-white">Quiero ser orador</button>
+                            <button type="button" class="btn btn-success">Comprar tickets</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row ali">
-            <div class="card" style="width: 18rem;">
-                <img src="imagenes/steve.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+
+    <div class="row justify-content-center m-4">
+        <div class="card mx-4" style="width: 18rem;">
+            <img src="imagenes/steve.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+            </div>
+        </div>
+        <div class="card mx-4" style="width: 18rem;">
+            <img src="imagenes/bill.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                </p>
+            </div>
+        </div>
+        <div class="card mx-4" style="width: 18rem;">
+            <img src="imagenes/ada.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This card has even longer content than the first to show that equal height
+                    action.</p>
             </div>
         </div>
     </div>
